@@ -3,18 +3,18 @@
 <xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
 <xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
 
-    <link name="base_link">
+    <link name="shield_top">
     <visual>
-      <origin xyz="0 0 0.53" rpy="0 0 0"/>
+      <origin xyz="0 0 0.53" rpy="${m_pi_2} 0 0.07"/>
       <geometry>
-        <mesh filename="package://xpider_descriptions/meshes/base_link.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+        <mesh filename="package://xpider_descriptions/meshes/shield_top.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
       </geometry>
       <xacro:material_xpider_grey />
       </visual>
       <collision>
-        <origin xyz="0 0 0.53" rpy="0 0 0"/>
+        <origin xyz="0 0 0.53" rpy="${m_pi_2} 0 0.07"/>
         <geometry>
-          <mesh filename="package://xpider_descriptions/meshes/base_link.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+          <mesh filename="package://xpider_descriptions/meshes/shield_top.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
         </geometry>
       </collision>
     </link>

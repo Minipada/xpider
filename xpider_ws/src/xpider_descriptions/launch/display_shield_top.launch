@@ -1,0 +1,19 @@
+<launch>
+ <param name="robot_description"
+  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/shield_top.xacro" />
+ <arg
+   name="gui"
+   default="True" />
+ <node
+   name="rviz"
+   pkg="rviz"
+   type="rviz"
+   required="true"
+   args="-d $(find xpider_descriptions)/urdf.rviz" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <param
+    name="rate"
+    value="25" />
+</launch>
