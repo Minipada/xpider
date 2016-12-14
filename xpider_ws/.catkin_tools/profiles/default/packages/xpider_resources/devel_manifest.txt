@@ -1,0 +1,4 @@
+xpider_resources
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_resources/share/xpider_resources/cmake/xpider_resourcesConfig.cmake /home/david/Development_david/repos/xpider/xpider_ws/devel/share/xpider_resources/cmake/xpider_resourcesConfig.cmake
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_resources/share/xpider_resources/cmake/xpider_resourcesConfig-version.cmake /home/david/Development_david/repos/xpider/xpider_ws/devel/share/xpider_resources/cmake/xpider_resourcesConfig-version.cmake
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_resources/lib/pkgconfig/xpider_resources.pc /home/david/Development_david/repos/xpider/xpider_ws/devel/lib/pkgconfig/xpider_resources.pc

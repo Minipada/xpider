@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="xpider">
+<xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
+<xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+
+  <xacro:macro name="xpider_base_link" params="prefix">
+    <!-- links -->
+    <!-- Base link -->
+    <link name="${prefix}base_link">
+    <visual>
+      <origin xyz="0 0 0.53" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://xpider_descriptions/meshes/base_link.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+      </geometry>
+      <xacro:material_xpider_grey />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.53" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://xpider_descriptions/meshes/base_link.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+</robot>

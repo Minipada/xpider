@@ -1,0 +1,4 @@
+xpider_descriptions
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_descriptions/share/xpider_descriptions/cmake/xpider_descriptionsConfig.cmake /home/david/Development_david/repos/xpider/xpider_ws/devel/share/xpider_descriptions/cmake/xpider_descriptionsConfig.cmake
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_descriptions/share/xpider_descriptions/cmake/xpider_descriptionsConfig-version.cmake /home/david/Development_david/repos/xpider/xpider_ws/devel/share/xpider_descriptions/cmake/xpider_descriptionsConfig-version.cmake
+/home/david/Development_david/repos/xpider/xpider_ws/devel/.private/xpider_descriptions/lib/pkgconfig/xpider_descriptions.pc /home/david/Development_david/repos/xpider/xpider_ws/devel/lib/pkgconfig/xpider_descriptions.pc

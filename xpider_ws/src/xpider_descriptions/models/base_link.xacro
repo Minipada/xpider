@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<robot name="xpider_leg" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find xpider_descriptions)/urdf/macros/base_link_macro.xacro"/>
+  <xacro:xpider_base_link prefix=""/>
+</robot>
