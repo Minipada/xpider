@@ -1,4 +1,0 @@
-robot_descriptions
-/home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/.private/robot_descriptions/share/robot_descriptions/cmake/robot_descriptionsConfig-version.cmake /home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/share/robot_descriptions/cmake/robot_descriptionsConfig-version.cmake
-/home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/.private/robot_descriptions/share/robot_descriptions/cmake/robot_descriptionsConfig.cmake /home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/share/robot_descriptions/cmake/robot_descriptionsConfig.cmake
-/home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/.private/robot_descriptions/lib/pkgconfig/robot_descriptions.pc /home/david/Development_david/repos/Discovering/ROS/xpider_ws/devel/lib/pkgconfig/robot_descriptions.pc
