@@ -1,0 +1,29 @@
+<launch>
+ <param name="robot_description"
+  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/shield_bottom.xacro" />
+ <param name="robot_description"
+  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/shield_bottom_base_link.xacro" />
+ <arg
+   name="gui"
+   default="True" />
+ <node
+   name="rviz"
+   pkg="rviz"
+   type="rviz"
+   required="true"
+   args="-d $(find xpider_descriptions)/urdf.rviz" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <param
+    name="rate"
+    value="25" />
+
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="30.0"/>
+    <param name="tf_prefix" type="string" value=""/>
+  </node>
+
+
+  <node pkg="xpider_descriptions" type="xpider_descriptions" name="xpider_publisher" output="screen" />
+</launch>
