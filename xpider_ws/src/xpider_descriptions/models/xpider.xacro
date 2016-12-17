@@ -2,13 +2,16 @@
 <robot name="xpider_shield_top_base_link" xmlns:xacro="http://ros.org/wiki/xacro">
 <xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
 <xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/step_bridge.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
+
 
   <xacro:include filename="$(find xpider_descriptions)/models/base_link.xacro"/>
 
   <joint name="base_joint" type="fixed">
 		<parent link="base_link" />
 		<child link="shield_top" />
-		<origin xyz="0 0 0" rpy="0 0 0" />
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3}" /> <!-- TOCHECK-->
 	</joint>
 
   <xacro:include filename="$(find xpider_descriptions)/models/shield_top.xacro"/>
@@ -16,7 +19,7 @@
   <joint name="base_joint2" type="fixed">
 		<parent link="base_link" />
 		<child link="shield_bottom" />
-		<origin xyz="0 0 0" rpy="0 0 0" />
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3 + m_pi_6}" />
 	</joint>
 
   <xacro:include filename="$(find xpider_descriptions)/models/shield_bottom.xacro"/>
@@ -24,16 +27,42 @@
   <joint name="base_joint3" type="fixed">
 		<parent link="base_link" />
 		<child link="step" />
-		<origin xyz="0 0 0" rpy="0 0 0" />
+		<origin xyz="0 0 ${base_link_to_step_height + height_step/2}" rpy="0 0 ${m_pi_2 + m_pi_6}" />
 	</joint>
 
-  <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
+   <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
 
   <joint name="base_joint4" type="fixed">
 		<parent link="base_link" />
 		<child link="step_base" />
-		<origin xyz="0 0 0" rpy="0 0 0" />
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3 + m_pi_6}" />
 	</joint>
 
   <xacro:include filename="$(find xpider_descriptions)/models/step_base.xacro"/>
+
+  <!--  Legs -->
+  <joint name="base_link_to_leg_1" type="fixed">
+		<parent link="base_link" />
+		<child link="leg_1" />
+    <origin xyz="${diameter_step} 0 ${base_link_to_step_height + height_step/2 + 0.013}" rpy="0 0 0"/>
+	</joint>
+
+  <xacro:leg num="1"/>
+
+  <joint name="base_link_to_leg_2" type="fixed">
+		<parent link="base_link" />
+		<child link="leg_2" />
+    <origin xyz="${diameter_step*cos_m_2_pi_3} ${diameter_step*sin_m_2_pi_3} ${base_link_to_step_height + height_step/2}" rpy="0 0 ${m_2_pi_3}"/>
+	</joint>
+
+  <xacro:leg num="2"/>
+
+  <joint name="base_link_to_leg_3" type="fixed">
+		<parent link="base_link" />
+		<child link="leg_3" />
+    <origin xyz="${diameter_step*cos_m_4_pi_3} ${diameter_step*sin_m_4_pi_3} ${base_link_to_step_height + height_step/2}" rpy="0 0 ${2*m_2_pi_3}"/>
+	</joint>
+
+  <xacro:leg num="3"/>
+
 </robot>

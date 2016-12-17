@@ -7,12 +7,25 @@
   <xacro:property name="m_pi_2" value="1.570796327" />
   <!-- 3Pi divided by two -->
   <xacro:property name="m_3_pi_2" value="2.35619449" />
+  <!-- 3Pi divided by two -->
+  <xacro:property name="m_2_pi_3" value="2.09439510239" />
   <!-- Pi divided by four -->
   <xacro:property name="m_pi_4" value="0.785398163" />
   <!-- Pi divided by three -->
   <xacro:property name="m_pi_3" value="1.0471975512" />
+  <!-- Pi divided by six -->
+  <xacro:property name="m_pi_6" value="0.52359877559" />
+
+  <xacro:property name="cos_m_2_pi_3" value="-0.5" />
+  <xacro:property name="sin_m_2_pi_3" value="0.86602540378" />
+  <xacro:property name="cos_m_4_pi_3" value="-0.5" />
+  <xacro:property name="sin_m_4_pi_3" value="-0.86602540378" />
 
   <xacro:property name="ratio_stl" value="0.01006046568"/>
 
   <xacro:property name="height_base" value="0.53"/>
+  <xacro:property name="height_step" value="0.04"/>
+  <xacro:property name="base_link_to_step_height" value="0.27"/>
+  <xacro:property name="diameter_step" value="0.5425" />
+
 </robot>
