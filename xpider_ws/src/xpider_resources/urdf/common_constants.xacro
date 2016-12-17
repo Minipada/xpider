@@ -5,6 +5,8 @@
   <xacro:property name="m_pi" value="3.1415926535" />
   <!-- Pi divided by two -->
   <xacro:property name="m_pi_2" value="1.570796327" />
+  <!-- 3Pi divided by two -->
+  <xacro:property name="m_3_pi_2" value="2.35619449" />
   <!-- Pi divided by four -->
   <xacro:property name="m_pi_4" value="0.785398163" />
 

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Workspace>
+    <WatchDirectories>
+        <Directory>src</Directory>
+    </WatchDirectories>
+    <IncludePaths>
+        <Directory>/home/david/Development_david/repos/xpider/xpider_ws/src/xpider_descriptions/include</Directory>
+        <Directory>/usr/include</Directory>
+        <Directory>/usr/include/c++/5</Directory>
+        <Directory>/usr/include/c++/5/backward</Directory>
+        <Directory>/usr/include/x86_64-linux-gnu</Directory>
+        <Directory>/usr/include/x86_64-linux-gnu/c++/5</Directory>
+        <Directory>/usr/lib/gcc/x86_64-linux-gnu/5/include</Directory>
+        <Directory>/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed</Directory>
+        <Directory>/usr/local/include</Directory>
+        <Directory>/usr/src/gtest</Directory>
+        <Directory>/usr/src/gtest/include</Directory>
+        <Directory>/opt/ros/kinetic/include</Directory>
+    </IncludePaths>
+</Workspace>

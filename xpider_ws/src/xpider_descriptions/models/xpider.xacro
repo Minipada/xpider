@@ -13,4 +13,20 @@
 
   <xacro:include filename="$(find xpider_descriptions)/models/shield_top.xacro"/>
 
+  <joint name="base_joint2" type="fixed">
+		<parent link="base_link" />
+		<child link="shield_bottom" />
+		<origin xyz="0 0 0" rpy="0 0 0" />
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/shield_bottom.xacro"/>
+
+  <joint name="base_joint3" type="fixed">
+		<parent link="base_link" />
+		<child link="step" />
+		<origin xyz="0 0 0" rpy="0 0 0" />
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
+
 </robot>

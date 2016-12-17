@@ -1,8 +1,6 @@
 <launch>
  <param name="robot_description"
-  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/shield_top.xacro" />
- <param name="robot_description"
-  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/shield_top_base_link.xacro" />
+  command="$(find xacro)/xacro.py $(find xpider_descriptions)/models/xpider.xacro" />
  <arg
    name="gui"
    default="True" />
