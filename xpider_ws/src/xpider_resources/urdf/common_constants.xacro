@@ -9,6 +9,10 @@
   <xacro:property name="m_3_pi_2" value="2.35619449" />
   <!-- Pi divided by four -->
   <xacro:property name="m_pi_4" value="0.785398163" />
+  <!-- Pi divided by three -->
+  <xacro:property name="m_pi_3" value="1.0471975512" />
 
   <xacro:property name="ratio_stl" value="0.01006046568"/>
+
+  <xacro:property name="height_base" value="0.53"/>
 </robot>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<robot name="xpider_step_base" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
+<xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+
+    <link name="step_base">
+    <visual>
+      <origin xyz="0 0 ${height_base}" rpy="${m_pi_2} 0 ${m_pi_3}"/>
+      <geometry>
+        <mesh filename="package://xpider_descriptions/meshes/step_base.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+      </geometry>
+      <xacro:material_xpider_grey />
+      </visual>
+      <collision>
+        <origin xyz="0 0 ${height_base}" rpy="${m_pi_2} 0 ${m_pi_3}"/>
+        <geometry>
+          <mesh filename="package://xpider_descriptions/meshes/step_base.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+        </geometry>
+      </collision>
+    </link>
+</robot>

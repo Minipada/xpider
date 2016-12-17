@@ -15,8 +15,8 @@ int main(int argc, char **argv)
   while (ros::ok())
   {
     joint_state.header.stamp = ros::Time::now();
-    joint_state.name.resize(4);
-    joint_state.position.resize(4);
+    joint_state.name.resize(5);
+    joint_state.position.resize(5);
 
     joint_state.name[0] = "base_link";
     joint_state.position[0] = 0;
@@ -24,11 +24,14 @@ int main(int argc, char **argv)
     joint_state.name[1] = "shield_top";
     joint_state.position[1] = 0;
 
-    joint_state.name[1] = "shield_bottom";
-    joint_state.position[1] = 0;
+    joint_state.name[2] = "shield_bottom";
+    joint_state.position[2] = 0;
 
-    joint_state.name[1] = "step";
-    joint_state.position[1] = 0;
+    joint_state.name[3] = "step";
+    joint_state.position[3] = 0;
+
+    joint_state.name[4] = "step_base";
+    joint_state.position[4] = 0;
 
     joint_state_publisher.publish(joint_state);
     loop_rate.sleep();

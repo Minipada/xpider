@@ -29,4 +29,11 @@
 
   <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
 
+  <joint name="base_joint4" type="fixed">
+		<parent link="base_link" />
+		<child link="step_base" />
+		<origin xyz="0 0 0" rpy="0 0 0" />
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/step_base.xacro"/>
 </robot>
