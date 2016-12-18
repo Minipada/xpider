@@ -1,12 +1,19 @@
 <?xml version="1.0" ?>
-<robot name="xpider_shield_top_base_link" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="xpider" xmlns:xacro="http://ros.org/wiki/xacro">
 <xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
 <xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_bridge.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_up.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/xpider.gazebo" />
 <!--<xacro:include filename="$(find xpider_descriptions)/models/leg_shield.xacro"/>-->
 
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
 
   <xacro:include filename="$(find xpider_descriptions)/models/base_link.xacro"/>
 
