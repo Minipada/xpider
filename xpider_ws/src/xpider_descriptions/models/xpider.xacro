@@ -70,10 +70,27 @@
   <joint name="base_link_to_step_up_1" type="fixed">
 		<parent link="base_link" />
 		<child link="step_up_1" />
-    <origin xyz="${diameter_step_up} 0 ${base_link_to_up}" rpy="0 ${m_pi_6} 0"/>
+    <origin xyz="${diameter_step_up} 0 ${base_link_to_step_up}" rpy="0 ${m_pi_6} 0"/>
 	</joint>
 
   <xacro:step_up num="1"/>
+
+  <joint name="base_link_to_step_up_2" type="fixed">
+		<parent link="base_link" />
+		<child link="step_up_2" />
+    <origin xyz="${diameter_step_up*cos_m_2_pi_3} ${diameter_step_up*sin_m_2_pi_3} ${base_link_to_step_up}" rpy="0 ${m_pi_6} ${m_2_pi_3}"/>
+	</joint>
+
+  <xacro:step_up num="2"/>
+
+  <joint name="base_link_to_step_up_3" type="fixed">
+		<parent link="base_link" />
+		<child link="step_up_3" />
+    <origin xyz="${diameter_step_up*cos_m_4_pi_3} ${diameter_step_up*sin_m_4_pi_3} ${base_link_to_step_up}" rpy="0 ${m_pi_6} ${2*m_2_pi_3}"/>
+	</joint>
+
+  <xacro:step_up num="3"/>
+
 
 <!--  <joint name="base_link_to_leg_4" type="fixed">
 		<parent link="base_link" />

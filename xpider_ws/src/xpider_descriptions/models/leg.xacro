@@ -7,18 +7,18 @@
     <xacro:macro name="leg" params="num">
       <link name="leg_${num}">
       <visual>
-        <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.5} 0"/>
+        <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.3} 0"/>
         <geometry>
           <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
-          <xacro:material_xpider_yellow />
         </geometry>
+        <xacro:material_xpider_greyish />
         </visual>
         <collision>
-          <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.5} 0"/>
+          <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.3} 0"/>
           <geometry>
             <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
-            <xacro:material_xpider_yellow />
           </geometry>
+          <xacro:material_xpider_greyish/>
         </collision>
       </link>
    </xacro:macro>

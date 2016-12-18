@@ -10,7 +10,7 @@
         <geometry>
           <mesh filename="package://xpider_descriptions/meshes/leg_shield.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
         </geometry>
-        <xacro:color_xpider_white />
+        <xacro:material_xpider_greyish />
         </visual>
         <collision>
           <origin xyz="-${diameter_step-0.052} -0.198 0" rpy="0 0 -0.2"/>
