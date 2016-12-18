@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<robot name="xpider_leg_shield" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
+<xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+
+    <xacro:macro name="leg_shield" params="num">
+      <link name="leg_shield_${num}">
+      <visual>
+        <origin xyz="-${diameter_step-0.052} -0.198 0" rpy="0 0 -0.2"/>
+        <geometry>
+          <mesh filename="package://xpider_descriptions/meshes/leg_shield.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+        </geometry>
+        <xacro:color_xpider_white />
+        </visual>
+        <collision>
+          <origin xyz="-${diameter_step-0.052} -0.198 0" rpy="0 0 -0.2"/>
+          <geometry>
+            <mesh filename="package://xpider_descriptions/meshes/leg_shield.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+          </geometry>
+        </collision>
+      </link>
+   </xacro:macro>
+</robot>

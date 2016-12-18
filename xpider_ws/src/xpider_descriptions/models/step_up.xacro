@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="xpider_step_up" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
+<xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+
+    <xacro:macro name="step_up" params="num">
+    <link name="step_up_${num}">
+    <visual>
+      <origin xyz="0 0 -${height_step/2}" rpy="${m_pi_2} 0 ${m_pi_3+m_pi_6}"/>
+      <geometry>
+        <mesh filename="package://xpider_descriptions/meshes/step_up.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+      </geometry>
+      <xacro:material_xpider_grey />
+      </visual>
+      <collision>
+        <origin xyz="0 0 -${height_step/2}" rpy="${m_pi_2} 0 ${m_pi_3+m_pi_6}"/>
+        <geometry>
+          <mesh filename="package://xpider_descriptions/meshes/step_up.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+        </geometry>
+      </collision>
+    </link>
+    </xacro:macro>
+
+</robot>

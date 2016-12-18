@@ -25,7 +25,10 @@
 
   <xacro:property name="height_base" value="0.53"/>
   <xacro:property name="height_step" value="0.04"/>
-  <xacro:property name="base_link_to_step_height" value="0.27"/>
-  <xacro:property name="diameter_step" value="0.5425" />
+  <xacro:property name="height_leg" value="${height_step/2 + 0.007}"/>
+  <xacro:property name="base_link_to_step_height" value="0.25"/>
+  <xacro:property name="base_link_to_up" value="0.499"/>
+  <xacro:property name="diameter_step" value="0.541" />
+  <xacro:property name="diameter_step_up" value="${26*ratio_stl}" />
 
 </robot>

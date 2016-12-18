@@ -2,20 +2,22 @@
 <robot name="xpider_leg" xmlns:xacro="http://ros.org/wiki/xacro">
 <xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
 <xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
+<xacro:include filename="$(find xpider_resources)/urdf/common_colours.xacro"/>
 
     <xacro:macro name="leg" params="num">
       <link name="leg_${num}">
       <visual>
-        <origin xyz="-${diameter_step-0.015} 0 0.029" rpy="0 -${m_pi_2} 0"/>
+        <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.5} 0"/>
         <geometry>
           <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+          <xacro:material_xpider_yellow />
         </geometry>
-        <xacro:material_xpider_grey />
         </visual>
         <collision>
-          <origin xyz="-${diameter_step-0.015} 0 0.029" rpy="0 -${m_pi_2} 0"/>
+          <origin xyz="0 0 0" rpy="0 -${m_pi-m_pi_6*0.5} 0"/>
           <geometry>
             <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
+            <xacro:material_xpider_yellow />
           </geometry>
         </collision>
       </link>
