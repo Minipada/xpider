@@ -15,6 +15,7 @@
   <xacro:property name="m_pi_3" value="1.0471975512" />
   <!-- Pi divided by six -->
   <xacro:property name="m_pi_6" value="0.52359877559" />
+  <xacro:property name="m_5_pi_3" value="${m_2_pi_3}" />
 
   <xacro:property name="cos_m_pi" value="-1" />
   <xacro:property name="sin_m_pi" value="0" />
