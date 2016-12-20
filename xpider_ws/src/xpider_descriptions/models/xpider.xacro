@@ -7,6 +7,7 @@
 <xacro:include filename="$(find xpider_descriptions)/models/step_up.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_connect.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_b.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/step_c.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/xpider.gazebo" />
 <!--<xacro:include filename="$(find xpider_descriptions)/models/leg_shield.xacro"/>-->
 
@@ -134,7 +135,7 @@
 
   <xacro:step_b num="1"/>
 
-    <joint name="step_connect_2_to_step_b_2" type="fixed">
+  <joint name="step_connect_2_to_step_b_2" type="fixed">
 		<parent link="step_connect_2" />
 		<child link="step_b_2" />
     <origin xyz="${0} ${diameter_step_connect_to_step_b} ${height_step_connect_to_step_b}" rpy="0 0 0"/>
@@ -142,13 +143,38 @@
 
   <xacro:step_b num="2"/>
 
-    <joint name="step_connect_3_to_step_b_3" type="fixed">
+  <joint name="step_connect_3_to_step_b_3" type="fixed">
 		<parent link="step_connect_3" />
 		<child link="step_b_3" />
     <origin xyz="${0} ${diameter_step_connect_to_step_b} ${height_step_connect_to_step_b}" rpy="0 0 0"/>
 	</joint>
 
   <xacro:step_b num="3"/>
+
+  <joint name="base_link_to_step_c_1" type="fixed">
+		<parent link="base_link" />
+		<child link="step_c_1" />
+    <origin xyz="${diameter_step_c*cos_m_pi_6} ${diameter_step_c*sin_m_pi_6} ${height_base_link_to_step_c}" rpy="0 0 0"/>
+	</joint>
+
+  <xacro:step_c num="1"/>
+
+  <joint name="base_link_to_step_c_2" type="fixed">
+		<parent link="base_link" />
+		<child link="step_c_2" />
+    <origin xyz="${diameter_step_c*cos_m_pi} ${diameter_step_c*sin_m_pi} ${height_base_link_to_step_c}" rpy="0 0 ${m_2_pi_3}"/>
+	</joint>
+
+  <xacro:step_c num="2"/>
+
+  <joint name="base_link_to_step_c_3" type="fixed">
+		<parent link="base_link" />
+		<child link="step_c_3" />
+    <origin xyz="${diameter_step_c*cos_m_5_pi_3} ${diameter_step_c*sin_m_5_pi_3} ${height_base_link_to_step_c}" rpy="0 0 ${2*m_2_pi_3}"/>
+	</joint>
+
+  <xacro:step_c num="3"/>
+
 
 
 </robot>

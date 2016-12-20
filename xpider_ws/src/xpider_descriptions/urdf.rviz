@@ -120,6 +120,21 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        step_c_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_c_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_c_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         step_connect_1:
           Alpha: 1
           Show Axes: false
@@ -187,6 +202,12 @@ Visualization Manager:
           Value: true
         step_base:
           Value: true
+        step_c_1:
+          Value: true
+        step_c_2:
+          Value: true
+        step_c_3:
+          Value: true
         step_connect_1:
           Value: true
         step_connect_2:
@@ -222,6 +243,12 @@ Visualization Manager:
             step:
               {}
             step_base:
+              {}
+            step_c_1:
+              {}
+            step_c_2:
+              {}
+            step_c_3:
               {}
             step_connect_1:
               step_b_1:
@@ -271,24 +298,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.63987541
+      Distance: 2.39986324
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0831722394
-        Y: 0.0515411347
-        Z: 0.320381045
+        X: -0.0144333411
+        Y: 0.277055353
+        Z: 0.0820885822
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.0697982609
+      Pitch: 0.194797546
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.28007889
+      Yaw: 1.21123004
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009
