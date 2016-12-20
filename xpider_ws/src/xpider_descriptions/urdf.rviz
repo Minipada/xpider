@@ -9,9 +9,6 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/step_base1
-        - /RobotModel1/Links1/step_up_11
-        - /RobotModel1/Links1/step_up_21
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
@@ -63,7 +60,7 @@ Visualization Manager:
       Collision Enabled: true
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -72,32 +69,32 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         leg_1:
           Alpha: 0.300000012
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         leg_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         leg_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         shield_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         shield_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         step:
           Alpha: 1
           Show Axes: false
@@ -107,22 +104,41 @@ Visualization Manager:
           Alpha: 0.5
           Show Axes: false
           Show Trail: false
+          Value: false
+        step_connect_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_connect_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_connect_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
           Value: true
         step_up_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         step_up_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         step_up_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -133,7 +149,7 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         base_link:
           Value: true
         leg_1:
@@ -150,11 +166,19 @@ Visualization Manager:
           Value: true
         step_base:
           Value: true
+        step_connect_1:
+          Value: true
+        step_connect_2:
+          Value: true
+        step_connect_3:
+          Value: true
         step_up_1:
           Value: true
         step_up_2:
           Value: true
         step_up_3:
+          Value: true
+        world:
           Value: true
       Marker Scale: 0.200000003
       Name: TF
@@ -162,27 +186,34 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          leg_1:
-            {}
-          leg_2:
-            {}
-          leg_3:
-            {}
-          shield_bottom:
-            {}
-          shield_top:
-            {}
-          step:
-            {}
-          step_base:
-            {}
-          step_up_1:
-            {}
-          step_up_2:
-            {}
-          step_up_3:
-            {}
+        world:
+          base_link:
+            leg_1:
+              {}
+            leg_2:
+              {}
+            leg_3:
+              {}
+            shield_bottom:
+              {}
+            shield_top:
+              {}
+            step:
+              {}
+            step_base:
+              {}
+            step_connect_1:
+              {}
+            step_connect_2:
+              {}
+            step_connect_3:
+              {}
+            step_up_1:
+              {}
+            step_up_2:
+              {}
+            step_up_3:
+              {}
       Update Interval: 0
       Value: true
     - Class: rviz/Axes
@@ -216,24 +247,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.48224878
+      Distance: 0.881539583
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.0542425774
-        Y: -0.168658823
-        Z: 0.123473853
+        X: 0.0393309258
+        Y: 0.0528719611
+        Z: 0.192251444
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.219799206
+      Pitch: 1.40479648
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.16069007
+      Yaw: 4.8219738
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009

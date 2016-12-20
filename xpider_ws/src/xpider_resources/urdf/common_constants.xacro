@@ -16,10 +16,16 @@
   <!-- Pi divided by six -->
   <xacro:property name="m_pi_6" value="0.52359877559" />
 
+  <xacro:property name="cos_m_pi" value="-1" />
+  <xacro:property name="sin_m_pi" value="0" />
+  <xacro:property name="cos_m_pi_3" value="0.5" />
+  <xacro:property name="sin_m_pi_3" value="0.86602540378" />
   <xacro:property name="cos_m_2_pi_3" value="-0.5" />
   <xacro:property name="sin_m_2_pi_3" value="0.86602540378" />
   <xacro:property name="cos_m_4_pi_3" value="-0.5" />
   <xacro:property name="sin_m_4_pi_3" value="-0.86602540378" />
+  <xacro:property name="cos_m_5_pi_3" value="0.5" />
+  <xacro:property name="sin_m_5_pi_3" value="-0.86602540378" />
 
   <xacro:property name="ratio_stl" value="0.01006046568"/>
 
@@ -30,5 +36,6 @@
   <xacro:property name="base_link_to_step_up" value="${height_base - 0.05}"/>
   <xacro:property name="diameter_step" value="${53.7748467325*ratio_stl}" />
   <xacro:property name="diameter_step_up" value="${26*ratio_stl}" />
+  <xacro:property name="diameter_step_connect" value="${5.5*ratio_stl}" />
 
 </robot>

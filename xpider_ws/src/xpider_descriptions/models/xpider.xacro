@@ -5,6 +5,7 @@
 <xacro:include filename="$(find xpider_descriptions)/models/step_bridge.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_up.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/step_connect.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/xpider.gazebo" />
 <!--<xacro:include filename="$(find xpider_descriptions)/models/leg_shield.xacro"/>-->
 
@@ -49,7 +50,7 @@
 
   <xacro:include filename="$(find xpider_descriptions)/models/step_base.xacro"/>
 
-  <!--  Legs -->
+  <!--  First set of Legs -->
   <joint name="base_link_to_leg_1" type="fixed">
 		<parent link="base_link" />
 		<child link="leg_1" />
@@ -98,36 +99,31 @@
 
   <xacro:step_up num="3"/>
 
+ <!-- Second set of legs -->
 
-<!--  <joint name="base_link_to_leg_4" type="fixed">
+  <joint name="base_link_to_step_connect_1" type="fixed">
 		<parent link="base_link" />
-		<child link="leg_4" />
-    <origin xyz="0 0 0" rpy="0 ${m_pi} 0"/>
+		<child link="step_connect_1" />
+    <origin xyz="${diameter_step_connect*cos_m_pi_3} ${diameter_step_connect*sin_m_pi_3} ${base_link_to_step_height + 0.0624}" rpy="0 0 ${-m_pi_6}"/>
 	</joint>
 
-        <link name="leg_4">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
-          <xacro:color_xpider_white />
-        </geometry>
-        </visual>
-        <collision>
-          <origin xyz="0 0 0" rpy="0 0 0"/>
-          <geometry>
-            <mesh filename="package://xpider_descriptions/meshes/leg.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
-            <xacro:color_xpider_white />
-          </geometry>
-        </collision>
-      </link>-->
+  <xacro:step_connect num="1"/>
 
-<!--   <joint name="base_link_to_leg_shield_3" type="fixed">
-		<parent link="leg_1" />
-		<child link="leg_shield_1" />
-    <origin xyz="0 0 0" rpy="-${m_pi_2} 0 0"/>
+    <joint name="base_link_to_step_connect_2" type="fixed">
+		<parent link="base_link" />
+		<child link="step_connect_2" />
+    <origin xyz="${diameter_step_connect*cos_m_pi} ${diameter_step_connect*sin_m_pi} ${base_link_to_step_height + 0.0624}" rpy="0 0 ${-m_pi_6 + m_2_pi_3}"/>
 	</joint>
 
-  <xacro:leg_shield num="1"/>-->
+  <xacro:step_connect num="2"/>
+
+    <joint name="base_link_to_step_connect_3" type="fixed">
+		<parent link="base_link" />
+		<child link="step_connect_3" />
+    <origin xyz="${diameter_step_connect*cos_m_5_pi_3} ${diameter_step_connect*sin_m_5_pi_3} ${base_link_to_step_height + 0.0624}" rpy="0 0 ${-m_pi_6 + 2*m_2_pi_3}"/>
+	</joint>
+
+  <xacro:step_connect num="3"/>
+
 
 </robot>
