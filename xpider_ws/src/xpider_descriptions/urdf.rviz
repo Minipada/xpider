@@ -60,7 +60,7 @@ Visualization Manager:
       Collision Enabled: true
       Enabled: true
       Links:
-        All Links Enabled: false
+        All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -69,33 +69,48 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         leg_1:
           Alpha: 0.300000012
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         leg_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         leg_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         shield_bottom:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         shield_top:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         step:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_b_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_b_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        step_b_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -104,7 +119,7 @@ Visualization Manager:
           Alpha: 0.5
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         step_connect_1:
           Alpha: 1
           Show Axes: false
@@ -124,17 +139,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         step_up_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         step_up_3:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: false
+          Value: true
         world:
           Alpha: 1
           Show Axes: false
@@ -163,6 +178,12 @@ Visualization Manager:
         shield_top:
           Value: true
         step:
+          Value: true
+        step_b_1:
+          Value: true
+        step_b_2:
+          Value: true
+        step_b_3:
           Value: true
         step_base:
           Value: true
@@ -203,11 +224,14 @@ Visualization Manager:
             step_base:
               {}
             step_connect_1:
-              {}
+              step_b_1:
+                {}
             step_connect_2:
-              {}
+              step_b_2:
+                {}
             step_connect_3:
-              {}
+              step_b_3:
+                {}
             step_up_1:
               {}
             step_up_2:
@@ -247,24 +271,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.881539583
+      Distance: 1.63987541
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0393309258
-        Y: 0.0528719611
-        Z: 0.192251444
+        X: 0.0831722394
+        Y: 0.0515411347
+        Z: 0.320381045
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.40479648
+      Pitch: 0.0697982609
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.8219738
+      Yaw: 5.28007889
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009

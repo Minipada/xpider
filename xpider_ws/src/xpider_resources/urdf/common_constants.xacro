@@ -37,5 +37,8 @@
   <xacro:property name="diameter_step" value="${53.7748467325*ratio_stl}" />
   <xacro:property name="diameter_step_up" value="${26*ratio_stl}" />
   <xacro:property name="diameter_step_connect" value="${5.5*ratio_stl}" />
+  <xacro:property name="height_step_connect_to_step_b" value="${3.99583888844*ratio_stl}" />
+  <xacro:property name="diameter_step_connect_to_step_b" value="${4.17475704763*ratio_stl}" />
+
 
 </robot>
