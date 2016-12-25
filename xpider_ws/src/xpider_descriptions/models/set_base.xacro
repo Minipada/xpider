@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<robot name="xpider_set_base" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/base_link.xacro"/>
+
+  <joint name="base_joint" type="continuous">
+		<parent link="base_link" />
+		<child link="shield_top" />
+    <axis xyz="0 0 1"/>
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3}" /> <!-- TOCHECK-->
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/shield_top.xacro"/>
+
+  <joint name="base_joint2" type="fixed">
+		<parent link="base_link" />
+		<child link="shield_bottom" />
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3 + m_pi_6}" />
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/shield_bottom.xacro"/>
+
+  <joint name="base_joint3" type="fixed">
+		<parent link="base_link" />
+		<child link="step" />
+		<origin xyz="0 0 ${base_link_to_step_height + height_step/2}" rpy="0 0 ${m_pi_2 + m_pi_6}" />
+	</joint>
+
+   <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
+
+  <joint name="base_joint4" type="fixed">
+		<parent link="base_link" />
+		<child link="step_base" />
+		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3 + m_pi_6}" />
+	</joint>
+
+  <xacro:include filename="$(find xpider_descriptions)/models/step_base.xacro"/>
+
+</robot>
