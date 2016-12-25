@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>xpider_driver</name>
+  <version>0.0.0</version>
+  <description>The xpider_driver package</description>
+
+  <maintainer email="minipada@gmail.com">David Bensoussan</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+
+  <export>
+
+  </export>
+</package>
