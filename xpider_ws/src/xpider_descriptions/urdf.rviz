@@ -9,6 +9,9 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /RobotModel1/Links1
+        - /RobotModel1/Links1/leg_51
+        - /RobotModel1/Links1/step_b_21
+        - /RobotModel1/Links1/step_connect_21
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
@@ -91,7 +94,7 @@ Visualization Manager:
           Show Trail: false
           Value: true
         leg_5:
-          Alpha: 1
+          Alpha: 0.400000006
           Show Axes: false
           Show Trail: false
           Value: true
@@ -121,7 +124,7 @@ Visualization Manager:
           Show Trail: false
           Value: true
         step_b_2:
-          Alpha: 1
+          Alpha: 0.5
           Show Axes: false
           Show Trail: false
           Value: true
@@ -136,17 +139,17 @@ Visualization Manager:
           Show Trail: false
           Value: true
         step_c_1:
-          Alpha: 1
+          Alpha: 0.5
           Show Axes: false
           Show Trail: false
           Value: true
         step_c_2:
-          Alpha: 1
+          Alpha: 0.5
           Show Axes: false
           Show Trail: false
           Value: true
         step_c_3:
-          Alpha: 1
+          Alpha: 0.5
           Show Axes: false
           Show Trail: false
           Value: true
@@ -156,7 +159,7 @@ Visualization Manager:
           Show Trail: false
           Value: true
         step_connect_2:
-          Alpha: 1
+          Alpha: 0.5
           Show Axes: false
           Show Trail: false
           Value: true
@@ -325,24 +328,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.45715308
+      Distance: 0.201360434
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.223376513
-        Y: 0.0232280977
-        Z: 0.0587467402
+        X: -0.610057473
+        Y: 0.420229554
+        Z: 0.292959034
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.139797717
+      Pitch: 0.22479789
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.16122961
+      Yaw: 1.32121575
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009

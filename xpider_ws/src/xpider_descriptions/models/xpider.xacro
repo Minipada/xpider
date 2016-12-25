@@ -178,7 +178,7 @@
   <joint name="base_link_to_leg_4" type="fixed">
 		<parent link="base_link" />
 		<child link="leg_4" />
-    <origin xyz="${diameter_step*cos_m_pi_3} ${diameter_step*sin_m_pi_3} ${base_link_to_step_height + height_leg}" rpy="0 0 ${m_pi_3}"/>
+    <origin xyz="${diameter_step*cos_m_pi_3} ${diameter_step*sin_m_pi_3} ${height_base_link_to_step_c}" rpy="0 0 ${m_pi_3}"/>
 	</joint>
 
   <xacro:leg num="4"/>
@@ -186,7 +186,7 @@
   <joint name="base_link_to_leg_5" type="fixed">
 		<parent link="base_link" />
 		<child link="leg_5" />
-    <origin xyz="${diameter_step*cos_m_pi} ${diameter_step*sin_m_pi} ${base_link_to_step_height + height_step/2}" rpy="0 0 ${m_pi}"/>
+    <origin xyz="${diameter_step*cos_m_pi} ${diameter_step*sin_m_pi} ${height_base_link_to_step_c}" rpy="0 0 ${m_pi}"/>
 	</joint>
 
   <xacro:leg num="5"/>
@@ -194,7 +194,7 @@
   <joint name="base_link_to_leg_6" type="fixed">
 		<parent link="base_link" />
 		<child link="leg_6" />
-    <origin xyz="${diameter_step*cos_m_5_pi_3} ${diameter_step*sin_m_5_pi_3} ${base_link_to_step_height + height_step/2}" rpy="0 0 ${-m_pi_3}"/>
+    <origin xyz="${diameter_step*cos_m_5_pi_3} ${diameter_step*sin_m_5_pi_3} ${height_base_link_to_step_c}" rpy="0 0 ${-m_pi_3}"/>
 	</joint>
 
   <xacro:leg num="6"/>

@@ -36,17 +36,17 @@
 
   <xacro:property name="ratio_stl" value="0.01006046568"/>
 
-  <xacro:property name="height_base" value="${48.705498889*ratio_stl}"/>
-  <xacro:property name="height_step" value="0.04"/>
-  <xacro:property name="height_leg" value="${height_step/2 + 0.007}"/>
-  <xacro:property name="base_link_to_step_height" value="${height_base-0.28}"/>
-  <xacro:property name="base_link_to_step_up" value="${height_base - 0.05}"/>
+  <xacro:property name="height_base" value="${52*ratio_stl}"/>
+  <xacro:property name="height_step" value="${3.97595909298*ratio_stl}"/>
+  <xacro:property name="height_leg" value="${height_step/2 + 0*0.69579284127*ratio_stl}"/>
+  <xacro:property name="base_link_to_step_height" value="${height_base-27.8317136509*ratio_stl}"/>
+  <xacro:property name="base_link_to_step_up" value="${height_base - 4.96994886622*ratio_stl}"/>
   <xacro:property name="diameter_step" value="${53.7748467325*ratio_stl}" />
   <xacro:property name="diameter_step_up" value="${26*ratio_stl}" />
   <xacro:property name="diameter_step_connect" value="${5.5*ratio_stl}" />
   <xacro:property name="height_step_connect_to_step_b" value="${3.99583888844*ratio_stl}" />
   <xacro:property name="diameter_step_connect_to_step_b" value="${4.17475704763*ratio_stl}" />
-  <xacro:property name="height_base_link_to_step_c" value="${base_link_to_step_height-0.99398977324*ratio_stl}"/>
+  <xacro:property name="height_base_link_to_step_c" value="${base_link_to_step_height-1.6*ratio_stl}"/>
   <xacro:property name="diameter_step_c" value="${26*ratio_stl}" />
 
 
