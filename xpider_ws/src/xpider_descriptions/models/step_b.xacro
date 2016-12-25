@@ -6,14 +6,14 @@
     <xacro:macro name="step_b" params="num">
     <link name="step_b_${num}">
     <visual>
-      <origin xyz="0 0 0" rpy="${m_pi_3/10 - m_pi_2} 0 ${m_pi}"/>
+      <origin xyz="0 0 0" rpy="${m_pi_3/11 - m_pi_2} 0 ${m_pi}"/>
       <geometry>
         <mesh filename="package://xpider_descriptions/meshes/step_b.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
       </geometry>
       <xacro:material_xpider_grey />
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="${m_pi_3/10 - m_pi_2} 0 ${m_pi}"/>
+        <origin xyz="0 0 0" rpy="${m_pi_3/11 - m_pi_2} 0 ${m_pi}"/>
         <geometry>
           <mesh filename="package://xpider_descriptions/meshes/step_b.stl" scale="${ratio_stl} ${ratio_stl} ${ratio_stl}"/>
         </geometry>
