@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="xpider_set_legs_2" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
+<xacro:include filename="$(find xpider_descriptions)/models/leg2.xacro"/>
 
   <joint name="base_link_to_step_connect_1" type="fixed">
  		<parent link="base_link" />

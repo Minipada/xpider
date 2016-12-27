@@ -33,6 +33,8 @@
   <xacro:property name="sin_m_5_pi_3" value="-0.86602540378" />
   <xacro:property name="cos_m_5_pi_6" value="-0.86602540378" />
   <xacro:property name="sin_m_5_pi_6" value="0.5" />
+  <xacro:property name="cos_m_11_pi_6" value="0.86602540378" />
+  <xacro:property name="sin_m_11_pi_6" value="-0.5" />
 
   <xacro:property name="ratio_stl" value="0.01006046568"/>
 
@@ -42,6 +44,7 @@
   <xacro:property name="base_link_to_step_height" value="${height_base-27.8317136509*ratio_stl}"/>
   <xacro:property name="base_link_to_step_up" value="${height_base - 4.96994886622*ratio_stl}"/>
   <xacro:property name="diameter_step" value="${47*ratio_stl}" />
+  <xacro:property name="diameter_step_to_leg_123" value="${54*ratio_stl}" />
   <xacro:property name="diameter_step_up_to_leg" value="${31.5*ratio_stl}" />
   <xacro:property name="diameter_step_up" value="${26*ratio_stl}" />
   <xacro:property name="diameter_step_connect" value="${5.5*ratio_stl}" />

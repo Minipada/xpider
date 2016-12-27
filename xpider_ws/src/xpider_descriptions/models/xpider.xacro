@@ -3,7 +3,6 @@
 <xacro:include filename="$(find xpider_resources)/urdf/common_materials.xacro"/>
 <xacro:include filename="$(find xpider_resources)/urdf/common_constants.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_bridge.xacro"/>
-<xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_up.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_connect.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/step_b.xacro"/>

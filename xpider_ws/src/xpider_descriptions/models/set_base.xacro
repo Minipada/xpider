@@ -25,15 +25,17 @@
 
   <xacro:include filename="$(find xpider_descriptions)/models/shield_bottom.xacro"/>
 
-  <joint name="base_joint3" type="fixed">
+  <joint name="base_step" type="prismatic">
 		<parent link="base_link" />
 		<child link="step" />
 		<origin xyz="0 0 ${base_link_to_step_height + height_step/2}" rpy="0 0 ${m_pi_2 + m_pi_6}" />
+    <limit effort="1000.0" lower="0" upper="0.03" velocity="0.5"/>
+    <axis xyz="0 0 1"/>
 	</joint>
 
-   <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
+  <xacro:include filename="$(find xpider_descriptions)/models/step.xacro"/>
 
-  <joint name="base_joint4" type="fixed">
+  <joint name="base_step_base" type="fixed">
 		<parent link="base_link" />
 		<child link="step_base" />
 		<origin xyz="0 0 ${height_base}" rpy="0 0 ${m_pi_3 + m_pi_6}" />
