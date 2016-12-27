@@ -9,9 +9,6 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/leg_11
-        - /RobotModel1/Links1/leg_21
-        - /RobotModel1/Links1/leg_31
         - /RobotModel1/Links1/step1
         - /RobotModel1/Links1/step_up_11
         - /RobotModel1/Links1/step_up_31
@@ -268,6 +265,18 @@ Visualization Manager:
                 {}
               leg_3:
                 {}
+              step_connect_1:
+                step_b_1:
+                  leg_4:
+                    {}
+              step_connect_2:
+                step_b_2:
+                  leg_5:
+                    {}
+              step_connect_3:
+                step_b_3:
+                  leg_6:
+                    {}
             step_base:
               {}
             step_c_1:
@@ -276,18 +285,6 @@ Visualization Manager:
               {}
             step_c_3:
               {}
-            step_connect_1:
-              step_b_1:
-                leg_4:
-                  {}
-            step_connect_2:
-              step_b_2:
-                leg_5:
-                  {}
-            step_connect_3:
-              step_b_3:
-                leg_6:
-                  {}
             step_up_1:
               {}
             step_up_2:
@@ -327,24 +324,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.63368297
+      Distance: 1.55735707
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.548292458
-        Y: -0.339887798
-        Z: 0.386232585
+        X: 0.136867449
+        Y: -0.0672797114
+        Z: 0.385831267
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.349798858
+      Pitch: -0.0652005151
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.67285752
+      Yaw: 3.77529979
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009
