@@ -9,7 +9,6 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/step1
         - /RobotModel1/Links1/step_up_11
         - /RobotModel1/Links1/step_up_31
         - /TF1
@@ -324,24 +323,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.55735707
+      Distance: 0.827125847
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.136867449
-        Y: -0.0672797114
-        Z: 0.385831267
+        X: -0.351895571
+        Y: 0.0281034019
+        Z: 0.17837356
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: -0.0652005151
+      Pitch: 0.0947994962
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.77529979
+      Yaw: 1.87025976
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009

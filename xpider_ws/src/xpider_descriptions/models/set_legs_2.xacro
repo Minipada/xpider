@@ -3,94 +3,100 @@
 <xacro:include filename="$(find xpider_descriptions)/models/leg.xacro"/>
 <xacro:include filename="$(find xpider_descriptions)/models/leg2.xacro"/>
 
-  <joint name="base_link_to_step_connect_1" type="fixed">
+  <joint name="base_link_to_step_connect_1" type="revolute">
  		<parent link="step" />
  		<child link="step_connect_1" />
     <origin xyz="${diameter_step_connect*cos_m_5_pi_3} ${diameter_step_connect*sin_m_5_pi_3} ${step_to_step_connect_height}" rpy="0 0 ${-m_pi_3 - m_pi_2}"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
  	</joint>
 
    <xacro:step_connect num="1"/>
 
-   <joint name="base_link_to_step_connect_2" type="fixed">
+  <joint name="base_link_to_step_connect_2" type="revolute">
  		<parent link="step" />
  		<child link="step_connect_2" />
     <origin xyz="${diameter_step_connect*cos_m_pi_3} ${diameter_step_connect*sin_m_pi_3} ${step_to_step_connect_height}" rpy="0 0 ${-m_pi_6}"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
  	</joint>
 
    <xacro:step_connect num="2"/>
 
-   <joint name="base_link_to_step_connect_3" type="fixed">
+  <joint name="base_link_to_step_connect_3" type="revolute">
  		<parent link="step" />
  		<child link="step_connect_3" />
     <origin xyz="${diameter_step_connect*cos_m_pi} ${diameter_step_connect*sin_m_pi} ${step_to_step_connect_height}" rpy="0 0 ${-m_pi_6 + m_2_pi_3}"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
  	</joint>
 
    <xacro:step_connect num="3"/>
 
-   <joint name="step_connect_1_to_step_b_1" type="revolute">
+  <joint name="step_connect_1_to_step_b_1" type="revolute">
  		<parent link="step_connect_1" />
  		<child link="step_b_1" />
-     <axis xyz="0 0 1"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
     <origin xyz="${0} ${diameter_step_connect_to_step_b} ${height_step_connect_to_step_b}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-0.1" upper="-0.04" velocity="0.5"/>
  	</joint>
 
    <xacro:step_b num="1"/>
 
-   <joint name="step_connect_2_to_step_b_2" type="revolute">
+  <joint name="step_connect_2_to_step_b_2" type="revolute">
  		<parent link="step_connect_2" />
  		<child link="step_b_2" />
-     <axis xyz="0 0 1"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
     <origin xyz="${0} ${diameter_step_connect_to_step_b} ${height_step_connect_to_step_b}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-0.1" upper="-0.04" velocity="0.5"/>
  	</joint>
 
    <xacro:step_b num="2"/>
 
-   <joint name="step_connect_3_to_step_b_3" type="revolute">
+  <joint name="step_connect_3_to_step_b_3" type="revolute">
  		<parent link="step_connect_3" />
  		<child link="step_b_3" />
-     <axis xyz="0 0 1"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
     <origin xyz="${0} ${diameter_step_connect_to_step_b} ${height_step_connect_to_step_b}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000.0" lower="-0.1" upper="-0.04" velocity="0.5"/>
  	</joint>
 
    <xacro:step_b num="3"/>
 
-   <joint name="base_link_to_step_c_1" type="revolute">
+  <joint name="base_link_to_step_c_1" type="revolute">
  		<parent link="base_link" />
  		<child link="step_c_1" />
     <origin xyz="${diameter_step_c*cos_m_pi_3} ${diameter_step_c*sin_m_pi_3} ${height_base_link_to_step_c}" rpy="0 0 ${-m_pi_6}"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
-     <axis xyz="0 0 1"/>
-     <mimic joint="step_connect_1_to_step_b_1" multiplier="1" offset="0" />
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
+    <axis xyz="0 0 1"/>
+    <mimic joint="base_link_to_step_connect_1" multiplier="1" offset="0" />
  	</joint>
 
    <xacro:step_c num="1"/>
 
-   <joint name="base_link_to_step_c_2" type="revolute">
+  <joint name="base_link_to_step_c_2" type="revolute">
  		<parent link="base_link" />
  		<child link="step_c_2" />
     <origin xyz="${diameter_step_c*cos_m_pi} ${diameter_step_c*sin_m_pi} ${height_base_link_to_step_c}" rpy="0 0 ${m_pi_2}"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
-     <axis xyz="0 0 1"/>
-     <mimic joint="step_connect_2_to_step_b_2" multiplier="1" offset="0" />
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
+    <axis xyz="0 0 1"/>
+    <mimic joint="base_link_to_step_connect_2" multiplier="1" offset="0" />
  	</joint>
 
    <xacro:step_c num="2"/>
 
-   <joint name="base_link_to_step_c_3" type="revolute">
+  <joint name="base_link_to_step_c_3" type="revolute">
  		<parent link="base_link" />
  		<child link="step_c_3" />
     <origin xyz="${diameter_step_c*cos_m_5_pi_3} ${diameter_step_c*sin_m_5_pi_3} ${height_base_link_to_step_c}" rpy="0 0 ${m_pi+m_pi_6}"/>
-     <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
-     <axis xyz="0 0 1"/>
-     <mimic joint="step_connect_3_to_step_b_3" multiplier="1" offset="0" />
+    <limit effort="1000.0" lower="-0.1" upper="0.1" velocity="0.5"/>
+    <axis xyz="0 0 1"/>
+    <mimic joint="base_link_to_step_connect_3" multiplier="1" offset="0" />
  	</joint>
 
    <xacro:step_c num="3"/>
 
-   <joint name="base_link_to_leg_4" type="fixed">
+  <joint name="step_b_1_to_leg_4" type="fixed">
  		<parent link="step_b_1" />
  		<child link="leg_4" />
     <origin xyz="${0} ${(diameter_step)*(-cos_m_pi)} ${-0.005}" rpy="0 0 ${m_pi_2}"/>
@@ -98,7 +104,7 @@
 
    <xacro:leg num="4"/>
 
-   <joint name="base_link_to_leg_5" type="fixed">
+  <joint name="step_b_2_to_leg_5" type="fixed">
  		<parent link="step_b_2" />
  		<child link="leg_5" />
     <origin xyz="${0} ${(diameter_step)*(-cos_m_pi)} ${-0.005}" rpy="0 0.07 ${m_pi_2}"/>
@@ -106,7 +112,7 @@
 
    <xacro:leg num="5"/>
 
-   <joint name="base_link_to_leg_6" type="fixed">
+  <joint name="step_b_3_to_leg_6" type="fixed">
  		<parent link="step_b_3" />
  		<child link="leg_6" />
     <origin xyz="${0} ${(diameter_step)*(-cos_m_pi)} ${-0.005}" rpy="0 0 ${m_pi_2}"/>
