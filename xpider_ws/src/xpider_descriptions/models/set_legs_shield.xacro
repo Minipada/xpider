@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<robot name="xpider_set_legs_1" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:include filename="$(find xpider_descriptions)/models/leg_shield.xacro"/>
+
+  <joint name="leg_1_to_leg_shield_1" type="fixed">
+		<parent link="leg_1" />
+		<child link="leg_shield_1" />
+    <origin xyz="${x_leg_to_leg_shield_set_1} 0 ${z_leg_to_leg_shield}" rpy="${-m_pi/2} 0 0"/>
+	</joint>
+
+  <xacro:leg_shield num="1"/>
+
+  <joint name="leg_2_to_leg_shield_2" type="fixed">
+		<parent link="leg_2" />
+		<child link="leg_shield_2" />
+    <origin xyz="${x_leg_to_leg_shield_set_1} 0 ${z_leg_to_leg_shield}" rpy="${-m_pi/2} 0 0"/>
+	</joint>
+
+  <xacro:leg_shield num="2"/>
+
+  <joint name="leg_3_to_leg_shield_3" type="fixed">
+		<parent link="leg_3" />
+		<child link="leg_shield_3" />
+    <origin xyz="${x_leg_to_leg_shield_set_1} 0 ${z_leg_to_leg_shield}" rpy="${-m_pi/2} 0 0"/>
+	</joint>
+
+  <xacro:leg_shield num="3"/>
+
+  <joint name="leg_4_to_leg_shield_4" type="fixed">
+		<parent link="leg_4" />
+		<child link="leg_shield_4" />
+    <origin xyz="${x_leg_to_leg_shield_set_2} 0 ${-z_leg_to_leg_shield}" rpy="${-m_pi/2} ${0.15} 0"/>
+	</joint>
+
+  <xacro:leg_shield num="4"/>
+
+  <joint name="leg_5_to_leg_shield_5" type="fixed">
+		<parent link="leg_5" />
+		<child link="leg_shield_5" />
+    <origin xyz="${x_leg_to_leg_shield_set_2} 0 ${-z_leg_to_leg_shield}" rpy="${-m_pi/2} ${0.15} 0"/>
+	</joint>
+
+  <xacro:leg_shield num="5"/>
+
+  <joint name="leg_6_to_leg_shield_6" type="fixed">
+		<parent link="leg_6" />
+		<child link="leg_shield_6" />
+    <origin xyz="${x_leg_to_leg_shield_set_2} 0 ${-z_leg_to_leg_shield}" rpy="${-m_pi/2} ${0.15} 0"/>
+	</joint>
+
+  <xacro:leg_shield num="6"/>
+
+
+
+</robot>

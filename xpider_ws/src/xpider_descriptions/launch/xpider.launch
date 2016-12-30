@@ -24,8 +24,8 @@
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
-<!--  <node pkg="xpider_descriptions" type="xpider_descriptions" name="xpider_publisher" output="screen" />-->
+  <node pkg="xpider_descriptions" type="xpider_descriptions" name="xpider_publisher" output="screen" />
 <!--  <node pkg="xpider_driver" type="xpider_driver" name="xpider_driver" output="screen" />-->
 
-<!--  <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 step_connect_1 step_b_1 100" />-->
+<!--  <node pkg="tf" type="static_transform_publisher" name="step_connect_1_to_step_b_1" args="1 0 0 0 0 0 1 step_connect_1 step_b_1 100" />-->
 </launch>

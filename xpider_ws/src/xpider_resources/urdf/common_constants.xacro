@@ -60,7 +60,9 @@
   <xacro:property name="height_base_link_to_step_c" value="${base_link_to_step_height-1.6*ratio_stl}"/>
   <xacro:property name="step_to_step_connect_height" value="${6.20249618505*ratio_stl}"/>
   <xacro:property name="diameter_step_c" value="${26*ratio_stl}" />
-
+  <xacro:property name="x_leg_to_leg_shield_set_1" value="${2.48497443311*ratio_stl}" />
+  <xacro:property name="x_leg_to_leg_shield_set_2" value="${1.49098465987*ratio_stl}" />
+  <xacro:property name="z_leg_to_leg_shield" value="${5.96393863947*ratio_stl}" />
 
 
 </robot>

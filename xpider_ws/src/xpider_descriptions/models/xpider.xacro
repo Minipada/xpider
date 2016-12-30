@@ -21,5 +21,7 @@
   <!-- Second set of legs -->
   <xacro:include filename="$(find xpider_descriptions)/models/set_legs_2.xacro" />
 
+  <!-- Leg shields -->
+  <xacro:include filename="$(find xpider_descriptions)/models/set_legs_shield.xacro" />
 
 </robot>
