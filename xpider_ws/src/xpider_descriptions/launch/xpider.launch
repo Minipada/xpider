@@ -22,7 +22,7 @@
     <param name="tf_prefix" type="string" value=""/>
   </node>
 
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+<!--  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />-->
 
   <node pkg="xpider_descriptions" type="xpider_descriptions" name="xpider_publisher" output="screen" />
 <!--  <node pkg="xpider_driver" type="xpider_driver" name="xpider_driver" output="screen" />-->

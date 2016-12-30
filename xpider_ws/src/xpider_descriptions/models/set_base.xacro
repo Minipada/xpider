@@ -8,7 +8,7 @@
 
   <xacro:include filename="$(find xpider_descriptions)/models/base_link.xacro"/>
 
-  <joint name="base_joint" type="continuous">
+  <joint name="base_link_to_shield_top" type="continuous">
 		<parent link="base_link" />
 		<child link="shield_top" />
     <axis xyz="0 0 1"/>

@@ -9,13 +9,14 @@ Panels:
         - /Grid1
         - /RobotModel1
         - /RobotModel1/Links1
+        - /RobotModel1/Links1/leg_shield_11
         - /RobotModel1/Links1/step_up_11
         - /RobotModel1/Links1/step_up_31
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
         - /Axes1
-      Splitter Ratio: 0.496487111
+      Splitter Ratio: 0.501170933
     Tree Height: 750
   - Class: rviz/Selection
     Name: Selection
@@ -98,6 +99,36 @@ Visualization Manager:
           Show Trail: false
           Value: true
         leg_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_1:
+          Alpha: 0.5
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_shield_6:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -211,9 +242,19 @@ Visualization Manager:
           Value: true
         leg_6:
           Value: true
-        shield_bottom:
+        leg_shield_1:
           Value: true
-        shield_top:
+        leg_shield_2:
+          Value: true
+        leg_shield_3:
+          Value: true
+        leg_shield_4:
+          Value: true
+        leg_shield_5:
+          Value: true
+        leg_shield_6:
+          Value: true
+        shield_bottom:
           Value: true
         step:
           Value: true
@@ -255,27 +296,31 @@ Visualization Manager:
           base_link:
             shield_bottom:
               {}
-            shield_top:
-              {}
             step:
               leg_1:
-                {}
+                leg_shield_1:
+                  {}
               leg_2:
-                {}
+                leg_shield_2:
+                  {}
               leg_3:
-                {}
+                leg_shield_3:
+                  {}
               step_connect_1:
                 step_b_1:
                   leg_4:
-                    {}
+                    leg_shield_4:
+                      {}
               step_connect_2:
                 step_b_2:
                   leg_5:
-                    {}
+                    leg_shield_5:
+                      {}
               step_connect_3:
                 step_b_3:
                   leg_6:
-                    {}
+                    leg_shield_6:
+                      {}
             step_base:
               {}
             step_c_1:
@@ -323,24 +368,24 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.827125847
+      Distance: 2.30986381
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.351895571
-        Y: 0.0281034019
-        Z: 0.17837356
+        X: 0.32509622
+        Y: 0.273110658
+        Z: 0.238226354
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.0947994962
+      Pitch: 0.019799646
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.87025976
+      Yaw: 4.24653769
     Saved:
       - Class: rviz/Orbit
         Distance: 0.663841009
