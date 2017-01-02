@@ -9,7 +9,7 @@
     <origin xyz="${diameter_step_up} 0 ${base_link_to_step_up}" rpy="${m_pi_2 + 0.38} ${0} ${m_pi_3+m_pi_6}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="1 0 0"/>
-    <mimic joint="base_step" multiplier="-5" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="-5" offset="0" />
 	</joint>
 
   <xacro:step_up num="1"/>
@@ -20,7 +20,7 @@
     <origin xyz="${diameter_step_up*cos_m_2_pi_3} ${diameter_step_up*sin_m_2_pi_3} ${base_link_to_step_up}" rpy="${m_pi_2 + 0.38} ${0} ${m_2_pi_3 + m_pi_3+m_pi_6}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="1 0 0"/>
-    <mimic joint="base_step" multiplier="-5" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="-5" offset="0" />
 	</joint>
 
   <xacro:step_up num="2"/>
@@ -31,7 +31,7 @@
     <origin xyz="${diameter_step_up*cos_m_4_pi_3} ${diameter_step_up*sin_m_4_pi_3} ${base_link_to_step_up}" rpy="${m_pi_2 + 0.38} ${0} ${2*m_2_pi_3 + m_pi_3+m_pi_6}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="1 0 0"/>
-    <mimic joint="base_step" multiplier="-5" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="-5" offset="0" />
 	</joint>
 
   <xacro:step_up num="3"/>
@@ -42,7 +42,7 @@
     <origin xyz="${diameter_step_to_leg_123*cos_m_4_pi_3} ${diameter_step_to_leg_123*sin_m_4_pi_3} ${0}" rpy="0 0.18 ${-m_2_pi_3}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="0 1 0"/>
-    <mimic joint="base_step" multiplier="2" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="2" offset="0" />
 	</joint>
 
   <xacro:leg2 num="1"/>
@@ -53,7 +53,7 @@
     <origin xyz="${diameter_step_to_leg_123} ${diameter_step_to_leg_123*0} ${0}" rpy="0 0.18 ${0}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="0 1 0"/>
-    <mimic joint="base_step" multiplier="2" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="2" offset="0" />
 	</joint>
 
   <xacro:leg2 num="2"/>
@@ -64,7 +64,7 @@
     <origin xyz="${diameter_step_to_leg_123*cos_m_2_pi_3} ${diameter_step_to_leg_123*sin_m_2_pi_3} ${0}" rpy="0 0.18 ${-2*m_2_pi_3}"/>
     <limit effort="1000.0" lower="0" upper="1" velocity="0.5"/>
     <axis xyz="0 1 0"/>
-    <mimic joint="base_step" multiplier="2" offset="0" />
+    <mimic joint="base_link_to_step" multiplier="2" offset="0" />
 	</joint>
 
   <xacro:leg2 num="3"/>

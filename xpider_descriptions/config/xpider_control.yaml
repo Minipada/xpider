@@ -1,0 +1,43 @@
+xpider:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 30
+
+  # Position Controllers ---------------------------------------
+  base_link_to_step_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_link_to_step
+    position: 0
+  base_link_to_shield_top_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_link_to_shield_top
+    position: 0
+
+
+  base_link_to_step_connect_1_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_link_to_step_connect_1
+    position: 0
+  base_link_to_step_connect_2_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_link_to_step_connect_2
+    position: 0
+  base_link_to_step_connect_3_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_link_to_step_connect_3
+    position: 0
+
+
+  step_connect_1_to_step_b_1_controller:
+    type: effort_controllers/JointPositionController
+    joint: step_connect_1_to_step_b_1
+    position: -0.1
+  step_connect_2_to_step_b_2_controller:
+    type: effort_controllers/JointPositionController
+    joint: step_connect_2_to_step_b_2
+    position: -0.1
+  step_connect_3_to_step_b_3_controller:
+    type: effort_controllers/JointPositionController
+    joint: step_connect_3_to_step_b_3
+    position: -0.1
