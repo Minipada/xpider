@@ -1,0 +1,3 @@
+[submodule "git-cmake-format"]
+	path = git-cmake-format
+	url = https://github.com/Minipada/git-cmake-format
